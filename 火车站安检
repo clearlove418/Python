@@ -1,0 +1,12 @@
+has_ticket = True
+knife_length = 30
+
+if has_ticket :
+    print("请您准备进行安检")
+    if knife_length > 20:
+        print("您的刀太长了，有%d cm长 " % knife_length)
+        print("不允许上车")
+    else:
+        print("请您上车，祝您路途愉快")
+else:
+    print("请先买票")
