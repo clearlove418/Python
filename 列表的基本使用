@@ -1,0 +1,32 @@
+name_list = ["zhangsan","lisi","wangwu"]
+
+# 1.取值
+print(name_list[0])
+# 1.1取索引：知道数据内容，想确定数据位置
+print(name_list.index("wangwu"))
+
+# 2. 修改
+name_list[1]="李四"
+print(name_list[1])
+# 2.1
+# name_list[3]="王小二"
+# 列表指定的索引超出范围
+
+# 3.增加
+name_list.append("王小二")
+# append给列表末尾增加数据
+name_list.insert(1,"小美眉")
+# insert给列表指定位置增加数据
+temp_list = ["孙悟空","猪八戒","沙和尚"]
+name_list.extend(temp_list)
+# extend给列表末尾追加一个其他列表的完整内容
+
+# 4.删除
+name_list.remove("wangwu")
+# remove在列表中删除指定数据
+name_list.pop()
+# pop删除括号内指定索引的数据（默认把列表中最后一个数据删除）
+name_list.clear()
+# 整个列表清空
+
+print(name_list)
